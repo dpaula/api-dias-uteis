@@ -23,11 +23,13 @@ public class ControlePropriedades {
 	}
 
 	private static String getCidade() {
-		return Utils.properties().getValor("prop.ControleDiaUtil.cidade").toUpperCase();
+		String cidade = Utils.properties().getValor("prop.ControleDiaUtil.cidade");
+		return cidade == null ? null : cidade.toUpperCase();
 	}
 
 	private static String getEstado() {
-		return Utils.properties().getValor("prop.ControleDiaUtil.estado").toUpperCase();
+		String estado = Utils.properties().getValor("prop.ControleDiaUtil.estado");
+		return estado == null ? null : estado.toUpperCase();
 	}
 
 	private static LocalDate getDataFim() {

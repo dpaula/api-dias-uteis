@@ -45,4 +45,20 @@ public class ControleDiasUteisTest {
 
 	}
 
+	@Test
+	public void retornaQtdDiasUteisDefault() {
+
+		// 25, 26, 26 - 30 - 2, 3, 4 - 7, 8, 9, 10, 11 - 14, 15
+		// 14 dias úteis
+		// LocalDate inicio = LocalDate.of(2018, 4, 25);
+		// LocalDate fim = LocalDate.of(2018, 5, 15);
+		//
+		// ControleDiasUteis cdu = new ControleDiasUteis(inicio, fim, estado, cidade);
+
+		ControleDiasUteis cdu = new ControleDiasUteis();
+
+		Assert.assertEquals(14, cdu.retornaQtdDiasUteis());
+
+	}
+
 }

@@ -141,20 +141,6 @@ public class ControleDiasUteis {
 		this.inicio = inicio;
 	}
 
-	public static void main(String[] args) {
-		LocalDate anosPraFrente = LocalDate.of(2025, 05, 12);
-		LocalDate anosPraTraz = LocalDate.of(2010, 05, 12);
-
-		LocalDate hoje = LocalDate.now();
-
-		int anosRange = hoje.getYear() - anosPraFrente.getYear();
-		int anosRange2 = hoje.getYear() - anosPraTraz.getYear();
-
-		System.out.println(Math.abs(anosRange));
-		System.out.println(Math.abs(anosRange2));
-
-	}
-
 	/**
 	 * @return the fim
 	 */
